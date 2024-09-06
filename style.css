@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 243, 224);
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+nav{
+    margin-left: 2vw;
+    display: flex;
+    align-items: center;
+}
+nav div{
+    flex-grow: 1;
+}
+.navlist,.buttons{
+    display: flex;
+    list-style-type: none;
+}
+.navlist li,ul li{
+    text-decoration: none;
+    margin: auto;
+    font-size: 18px;
+}
+.navlist li{
+    cursor: pointer;
+}
+.navh1,.footer div div h1{
+    font-size: 24px;
+}
+.box{
+    background-image: url(images/surfer.svg),url(images/berry.svg);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: 23px 11px,top right;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.star img,.star2 img{
+    margin-left: 200px;
+    margin-right: 250px;
+}
+.star2{
+    display: flex;
+    justify-content: flex-end;
+}
+.box div,.flav{
+    width: fit-content;
+    margin: auto;
+}
+.extra,.desc,ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.side-text{
+    font-size: 18px;
+}
+button {
+    cursor: pointer;
+    margin: 70px auto;
+    font-size: 18px;
+    width: 180px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px 25px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 5px 5px 0 black;
+    transition: transform 0.3s ease-in-out;
+}
+button:hover{
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(6deg);
+}
+h1{
+    text-shadow: 10px 10px 20px rgba(0,0,0,0.3),   -10px -10px 20px rgba(0,0,0,0.1) ;
+    width: fit-content;
+    cursor: default;
+    font-weight: 900;
+    font-size: 100px;
+    transition: all 1.5s ease-in-out;
+
+}
+h1:hover{
+    transition: all 0.3s ease-in-out;
+    color: rgb(165, 56, 42);
+    text-shadow: 10px 10px 20px rgba(165,56,42,0.3),   -10px -10px 20px rgba(165,56,42,0.1) ;
+}
+.text{
+    font-size: 45px;
+    font-weight: 400;
+    color: rgb(58, 58, 58);
+}
+.flavors{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.images{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.images img{
+    width: 100%;
+    max-width: 25%;
+    margin: 0px 20px;
+    transition: transform 0.4s ease-in-out;
+}
+.images img:hover{
+    transition: transform 0.4s ease-in-out;
+    transform: translateY(-30px);
+}
+.desc{
+    max-height: fit-content;
+    margin: auto;
+}
+.desc div{
+    width: 15%;
+    font-size: 18px;
+    margin: 0 25px;
+}
+ul,ul li{
+    text-shadow: 4px 4px 4px rgb(0 0 0 / 55%);
+    cursor: default;
+    margin: 50px 50px;
+    font-size: 24px;
+    font-weight: 500;
+    transition: all 1s ease-in-out;
+}
+ul li:hover{
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.5);
+    text-shadow: 11px 8px 7px rgb(0 0 0 / 54%);
+}
+.extra{
+    font-size: 54px;
+    text-align: left;
+}
+.section2{
+    background-color: rgb(36, 36, 36);
+    padding: 60px 70px;
+    width: 100%;
+}
+.card{
+    padding: 50px;
+    border-radius: 10px;
+    background-color: rgb(253, 241, 226);
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card div{
+    width: 50%;
+}
+.card-text{
+    padding-right: 80px;
+}
+.card-text p{
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 25px;
+}
+.card div img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.parallax{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-image: url(images/Parallex\ Cereal\ In\ Milk.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.animation{
+    display: flex;
+    gap: 70px;
+}
+.animation div img,.hit div img{
+    animation: float 3.5s ease-in-out infinite; 
+}
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+#floating{
+    animation: float2 3.5s ease-in-out infinite;
+}
+@keyframes float2 {
+    0%, 100% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+.tiktok{
+    width: 80%;
+    margin: 70px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.im{
+    margin-top: 70px;
+    width: fit-content;
+    display: flex;
+    gap: 40px;
+}
+.im div{
+    width: fit-content;
+    cursor: pointer;
+    width: 25%;
+    transition: all 0.4s ease-in-out;
+}
+.im div img{
+    width: 100%;
+}
+.im div:hover{
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.15);
+}
+ol{
+    list-style-type: none;
+}
+ol li{
+    margin: 10px 0px;
+    cursor: pointer;
+    text-decoration: none;
+}
+ol li:hover{
+    text-decoration: underline;
+}
+footer{
+    padding: 30px 50px;
+    background-color: rgb(24, 24, 24);
+    width: 100%;
+}
+.footer{
+    border-radius: 10px;
+    background-color: rgb(136, 121, 224);
+}
+.flex{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex div{
+    text-align: center;
+    width: 25%;
+}
+.contain{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+}
+.input-container {
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    background-color: rgb(136, 121, 224);
+    border-radius: 10px;
+}
+
+input[type="email"] {
+    background-color: rgb(136, 121, 224);
+    border: none;
+    border-bottom: 2px solid #000;
+    padding: 10px 5px;
+    font-size: 18px;
+    outline: none;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+label {
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    left: 30px;
+}
+
+input[type="email"]:focus + label,
+input[type="email"]:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 12px;
+    color: #000;
+}
+.inputdiv{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+@media (max-width: 1000px){
+    .navlist li,ul li{
+        font-size: 16px;
+    }
+    ul li{
+        margin: 20px 20px;
+    }
+    .navh1,.footer div div h1{
+        font-size: 22px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    .side-text{
+        font-size: 14px;
+    }
+    button{
+        margin: 40px auto;
+        width: 140px;
+        font-size: 14px;
+    }
+    .text{
+        font-size: 25px;
+    }
+    .desc div{
+        font-size: 12px;
+    }
+    .extra{
+        font-size: 30px;
+    }
+    .card{
+        padding: 20px;
+    }
+    .section2{
+        padding: 40px 45px;
+    }
+    .card-text{
+        padding-right: 40px;
+    }
+    .card-text p{
+        margin-top: 14px;
+        line-height: 20px;
+        font-size: 15px;
+    }
+    .parallax{
+        height: 200px;
+    }
+    .tiktok{
+        margin: 40px auto;
+    }
+    ol li{
+        font-size: 10px;
+        margin: 5px 0px;
+    }
+    .flex div{
+        font-size: 12px;
+    }
+    .inside h3,.inside p{
+        font-size: 17px;
+    }
+    .contain{
+        gap: 30px;
+    }
+    .copyright{
+        font-size: 13px;
+    }
+    input[type="email"]{
+        padding: 0px 0px 5px 0px;
+    }
+    label{
+        font-size: 14px;
+    }
+}
+@media (max-width: 750px){
+    ul{
+        margin: 5px 0px;
+    }
+    .navlist li,ul li{
+        font-size: 10px;
+    }
+    .navlist li{
+        margin: 10px 10px;
+    }
+    ul li{
+        margin: 10px 5px;
+    }
+    .navh1,.footer div div h1{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .side-text{
+        font-size: 10px;
+    }
+    button{
+        height: 42px;
+        padding: 10px 15px;
+        margin: 15px auto;
+        width: 140px;
+        font-size: 12px;
+    }
+    .text{
+        font-size: 16px;
+    }
+    .desc{
+        display: none;
+    }
+    .extra{
+        font-size: 18px;
+    }
+    .card{
+        flex-direction: column;
+        padding: 15px;
+    }
+    .card div{
+        width: 100%;
+    }
+    .section2{
+        padding: 30px 35px;
+    }
+    .card-text{
+        padding-right: 35px;
+    }
+    .card-text p{
+        margin-top: 10px;
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .parallax{
+        height: 200px;
+    }
+    .im{
+        gap: 10px;
+        margin-top: 30px;
+    }
+    .tiktok{
+        margin: 30px auto;
+    }
+    ol li{
+        font-size: 7px;
+        margin: 5px 0px;
+    }
+    .flex div{
+        font-size: 8px;
+    }
+    .inside h3,.inside p{
+        font-size: 13px;
+    }
+    .contain{
+        padding: 10px;
+        gap: 15px;
+    }
+    .copyright{
+        font-size: 10px;
+    }
+    input[type="email"]{
+        padding: 0px 0px 5px 0px;
+    }
+    label{
+        font-size: 14px;
+    }
+    .animation{
+        gap: 0px;
+    }
+    .animation img,.hide{
+        display: none;
+    }
+    .hit{
+        margin: 0px;
+    }
+    footer{
+        padding: 20px;
+    }
+}
